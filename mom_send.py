@@ -7,9 +7,9 @@ client = Client(account_sid, auth_token)
 
 def send_text():
     message = client.messages.create(
-                              from_='whatsapp:+14155238886',
-                              body='EAE',
-                              to='whatsapp:+555599309399'
+                              from_='whatsapp:+555599309399',
+                              body='Oi. Tudo certo? Comigo e com o bê está tudo certo...',
+                              to='whatsapp:+555596472333'
                           )
 
     print(message.sid)
