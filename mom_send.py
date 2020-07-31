@@ -8,17 +8,17 @@ client = Client(account_sid, auth_token)
 
 def send_text():
     bomdia = client.messages.create(
-                              from_='whatsapp:+14155238886',
+                              from_='whatsapp:+',
                               body=f'Bom dia.',
-                              to='whatsapp:+555599309399'
+                              to='whatsapp:+'
                           )
 
     print(bomdia.sid)
 
     lembretes = client.messages.create(
-        from_='whatsapp:+14155238886',
-        body=f'Lembre-se de escovar os dentes do Bernardo, ler e treinar desenho.',
-        to='whatsapp:+555599309399'
+        from_='whatsapp: num',
+        body=f'lorem ipsum',
+        to='boiler plate text'
     )
 
     print(lembretes.sid)
